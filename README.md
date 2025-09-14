@@ -1,49 +1,123 @@
-# TranscribeToggle
+# 🎙️ TranscribeToggle
 
-A macOS menu bar app for speech-to-text transcription using OpenAI's Whisper API. Record audio with global hotkeys and automatically paste transcribed text wherever your cursor is.
+> **Transform your voice into text instantly, anywhere on macOS**
 
-## Features
+A beautifully designed menu bar app that brings OpenAI's powerful Whisper AI directly to your fingertips. Record audio with global hotkeys and watch your words appear wherever you're typing - perfect for writing emails, taking notes, or filling forms at lightning speed.
 
-- **Global Hotkeys**: Press ⌥⌘T to start recording, Enter to stop and transcribe
-- **Menu Bar Integration**: Clean menu bar interface with recording status indicator
-- **Auto-paste**: Transcribed text is automatically pasted at your cursor location
-- **Smart Hotkey Management**: Enter key only works during active recording sessions
-- **Bluetooth Audio Support**: Optimized for AirPods and other Bluetooth microphones
+![macOS](https://img.shields.io/badge/macOS-14.0+-blue?style=flat-square&logo=apple)
+![Swift](https://img.shields.io/badge/Swift-5.0+-orange?style=flat-square&logo=swift)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
-## Requirements
+## ✨ Why You'll Love TranscribeToggle
 
+**🚀 Instant Transcription** - Press ⌥⌘T anywhere, speak naturally, hit Enter. Your words appear exactly where you need them.
+
+**🎯 Smart & Unobtrusive** - Lives quietly in your menu bar until you need it. No windows to manage, no apps to switch between.
+
+**🔒 Secure by Design** - API keys stored safely in macOS Keychain. Audio processed only for transcription, never stored.
+
+**🎧 Works with Everything** - Optimized for AirPods, built-in mics, USB headsets, and professional audio equipment.
+
+**⚡ Lightning Fast** - Powered by OpenAI's industry-leading Whisper AI for accurate transcription in seconds.
+
+## 🎬 How It Works
+
+1. **🎙️ Press ⌥⌘T** - Start recording instantly from anywhere
+2. **🗣️ Speak naturally** - The app captures your voice in high quality
+3. **⌨️ Press Enter** - Stop recording and send to OpenAI's Whisper AI
+4. **✨ Watch the magic** - Your transcribed text appears exactly where your cursor is
+
+Perfect for:
+- 📧 Writing emails and messages
+- 📝 Taking meeting notes
+- 📋 Filling out forms
+- 💬 Social media posts
+- 📚 Content creation
+- 🎯 Any text input task
+
+## 🚀 Get Started in 60 Seconds
+
+### Prerequisites
 - macOS 14.0 or later
-- Microphone access permissions
-- OpenAI API key
+- OpenAI API key ([get one here](https://platform.openai.com/api-keys))
 
-## Setup
+### Installation & Setup
 
-1. **Set your OpenAI API key** as an environment variable:
-   ```bash
-   export OPENAI_API_KEY="your-api-key-here"
-   ```
+1. **Download & Launch** - Open TranscribeToggle.app (it appears in your menu bar)
 
-2. **Grant Permissions**:
-   - Microphone access (prompted on first run)
-   - Accessibility access may be required for auto-paste functionality
+2. **Configure API Key** - Click the microphone icon → Settings → paste your OpenAI API key → Save
 
-## Usage
+3. **Grant Permissions** - Allow microphone access when prompted
 
-1. Launch TranscribeToggle - it will appear in your menu bar with a microphone icon
-2. Press ⌥⌘T anywhere on your system to start recording
-3. Press Enter to stop recording and transcribe
-4. The transcribed text will automatically be pasted at your cursor location
-5. View the last transcription in the menu bar dropdown
+4. **Start Transcribing!** - Press ⌥⌘T anywhere to begin
 
-## Technical Details
+### First Time Setup
+![Settings Window](https://via.placeholder.com/450x280/f0f0f0/666666?text=Clean+Settings+Interface)
 
-- Built with SwiftUI and AVFoundation
-- Uses Carbon framework for global hotkey registration
-- Integrates with OpenAI's Whisper API for speech recognition
-- Implements smart session tracking to prevent hotkey conflicts
+The app will guide you through a one-time setup with clear instructions for getting your API key.
 
-## Privacy
+## 🎯 Features That Set Us Apart
 
-- Audio is only processed for transcription purposes
-- No audio data is stored permanently
-- All processing happens through OpenAI's API according to their privacy policy
+### 🔥 Global Hotkey Magic
+- **⌥⌘T** to start recording from any app
+- **Enter** to stop and transcribe (only works during recording)
+- Smart session tracking prevents accidental triggers
+
+### 🎨 Beautiful Interface
+- Minimalist menu bar design
+- Clean settings window
+- Real-time recording status
+- Last transcription preview
+
+### 🔐 Enterprise-Grade Security
+- API keys encrypted in macOS Keychain
+- No audio data stored locally
+- Secure HTTPS communication with OpenAI
+
+### 🎵 Professional Audio Support
+- Auto-optimized for different microphone types
+- Works perfectly with AirPods Pro/Max
+- Support for professional USB/XLR setups
+- Intelligent audio device switching
+
+## 🏗️ Architecture
+
+TranscribeToggle is built with modern Swift and SwiftUI:
+
+```
+📁 Project Structure
+├── ContentView.swift          # Main app & menu bar setup
+├── MenuBarTranscriber.swift   # Core transcription engine
+├── SettingsViews.swift        # Beautiful SwiftUI interfaces
+├── KeychainManager.swift      # Secure credential storage
+└── Info.plist                # Permissions & app metadata
+```
+
+**Key Technologies:**
+- **SwiftUI** - Native macOS interface
+- **AVFoundation** - High-quality audio recording
+- **Carbon Framework** - System-wide hotkey registration
+- **Security Framework** - Keychain encryption
+- **URLSession** - Secure API communication
+
+## 🔒 Privacy & Security
+
+**Your privacy is paramount:**
+- ✅ Audio only processed for transcription
+- ✅ No permanent audio storage
+- ✅ API keys encrypted in Keychain
+- ✅ All communication over HTTPS
+- ✅ Follows OpenAI's privacy guidelines
+- ✅ No telemetry or tracking
+
+## 🤝 Contributing
+
+We welcome contributions! TranscribeToggle is built with love for the developer community.
+
+## 📄 License
+
+MIT License - feel free to use, modify, and distribute.
+
+---
+
+**Made with ❤️ for productivity enthusiasts who believe their voice should be heard... as text.**
