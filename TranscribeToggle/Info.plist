@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleIdentifier</key>
+    <string>com.jannisgrimm.TranscribeToggle</string>
+    <key>CFBundleName</key>
+    <string>TranscribeToggle</string>
+    <key>CFBundleVersion</key>
+    <string>1.0</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>TranscribeToggle requires microphone access to record your speech and convert it to text using OpenAI's Whisper API. Your audio is only processed for transcription and is not stored permanently.</string>
+    <key>LSUIElement</key>
+    <true/>
+</dict>
+</plist>
