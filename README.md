@@ -1,4 +1,4 @@
-# 🎙️ TranscribeToggle
+# 🎙️ TranscribeToggle: Natural Language Automation
 
 > **Transform your voice into text instantly, anywhere on macOS**
 
