@@ -28,12 +28,11 @@ A beautifully designed menu bar app that brings OpenAI's powerful Whisper AI dir
 4. **✨ Watch the magic** - Your transcribed text appears exactly where your cursor is
 
 Perfect for:
-- 📧 Writing emails and messages
-- 📝 Taking meeting notes
-- 📋 Filling out forms
-- 💬 Social media posts
-- 📚 Content creation
-- 🎯 Any text input task
+- Orchestrating Agents
+- Writing emails and messages
+- Taking meeting notes
+- Filling out forms
+- Any text input task
 
 ## 🚀 Get Started in 60 Seconds
 
